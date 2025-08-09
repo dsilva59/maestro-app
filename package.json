@@ -1,0 +1,13 @@
+{
+  "name": "maestro-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/api"
+  ],
+  "scripts": {
+    "build": "npm run -w apps/web build",
+    "dev:web": "npm run -w apps/web dev",
+    "dev:api": "npm run -w apps/api dev"
+  }
+}
